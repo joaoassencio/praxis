@@ -114,10 +114,6 @@ i {
   max-width: 940px;
   font-size: 48px;
 }
-.hero p {
-  text-align: center;
-  margin: 14px 0;
-}
 
 .button-contact {
   padding: 14px 28px;
@@ -150,16 +146,65 @@ i {
     padding: 0 14px;
     width: 100%;
   }
-  .hero p {
-    font-size: 14px;
-  }
 }
 @media screen and (max-width: 480px) {
   .hero h1 {
     font-size: 24px;
   }
-  .hero p {
-    font-size: 12px;
+}
+.services {
+  background-color: #FFF;
+  color: #232224;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+}
+
+.services-content h2 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+
+.areas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0 44px 34px 44px;
+}
+
+area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  border-radius: 8px;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+}
+
+.area button {
+  padding: 14px 28px;
+  color: #FFF;
+  background-color: #d94140;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 14px 0;
+}
+
+.area button:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
   }
 }
 .about {
