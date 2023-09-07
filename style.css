@@ -101,7 +101,7 @@ i {
 
 .hero {
   color: #FFF;
-  min-height: 80vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,8 +118,8 @@ i {
 .button-contact {
   padding: 14px 28px;
   color: #FFF;
-  background-color: #d94140;
-  border: 0;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  border-radius: 5px;
   font-size: 18px;
   font-weight: 600;
   margin: 14px 0;
@@ -153,8 +153,8 @@ i {
   }
 }
 .services {
-  background-color: #FFF;
-  color: #232224;
+  background-color: #06121e;
+  color: #FFF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,37 +176,52 @@ i {
   padding: 0 44px 34px 44px;
 }
 
-area {
-  flex: 1;
+.card {
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  position: relative;
   display: flex;
-  flex-direction: column;
-  background-color: #FFF;
-  border-radius: 8px;
-  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+  width: 320px;
+  min-height: 145px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-.area button {
-  padding: 14px 28px;
-  color: #FFF;
-  background-color: #d94140;
-  border: 0;
-  font-size: 18px;
-  font-weight: 600;
-  margin: 14px 0;
-}
-
-.area button:hover {
+.card:hover {
   animation: scaleButton 0.8s alternate infinite;
 }
 
-@keyframes scaleButton {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.07);
-  }
+.content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 20px;
+  color: #e8e8e8;
 }
+
+.content .heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.content .btn {
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
 .about {
   background-color: #06121e;
   overflow: hidden;
@@ -222,6 +237,7 @@ area {
 }
 .about-content img {
   max-width: 350px;
+  border-radius: 20px;
 }
 
 .about-content div {
