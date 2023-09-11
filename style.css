@@ -206,14 +206,11 @@ ul {
 }
 
 .service-areas {
-  width: 60%;
-  max-width: 600px;
+  width: 80%;
   height: 800px;
 }
 
 .accordion {
-  max-width: 530px;
-  width: 100%;
   background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   margin: 0 15px;
   padding: 15px;
@@ -230,7 +227,6 @@ ul {
 
 .accordion-content.open {
   padding-bottom: 10px;
-  height: 700px;
 }
 
 .accordion-content header {
