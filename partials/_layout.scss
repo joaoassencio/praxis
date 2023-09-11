@@ -148,7 +148,7 @@ ul {
 }
 
 .accordion {
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    background: $red-dark;
     margin: 0 15px;
     padding: 15px;
     border-radius: 8px;
@@ -157,7 +157,7 @@ ul {
 .accordion .accordion-content {
     margin: 10px 0;
     border-radius: 4px;
-    background: $black-light;
+    background: $primary-light;
     border: 1px solid $primary-normal;
     overflow: hidden;
 }
