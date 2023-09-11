@@ -195,12 +195,11 @@ i {
 .content {
   display: flex;
   flex-direction: column;
-  align-content: center;
   gap: 20px;
   color: #e8e8e8;
 }
 
-.content .heading {
+.heading {
   text-align: center;
   font-weight: 700;
   font-size: 32px;
@@ -222,6 +221,11 @@ i {
   animation: scaleButton 0.8s alternate infinite;
 }
 
+@media screen and (max-width: 768px) {
+  .services-content {
+    flex-direction: column;
+  }
+}
 .about {
   background-color: #06121e;
   overflow: hidden;
