@@ -15,12 +15,13 @@ i {
 .header-icons {
     display: flex;
     gap: 14px;
+    transition: transform 0.8s;
 }
 
 .header-icons a:hover {
     i {
-        animation: translateY 0.8s infinite alternate;
         color: $vinho-light;
+        transform: translateY(-5px)
     }
 }
 
